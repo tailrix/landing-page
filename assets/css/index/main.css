@@ -239,6 +239,7 @@ p {
   border: none;
   background: #5864FF;
   overflow: hidden;
+  padding: 10px 30px;
 }
 
 .main-btn:hover {
@@ -996,6 +997,13 @@ p {
   margin: auto;
   font-size: 70px;
   line-height: 1;
+}
+.hero-section .hero-content .icon4 {
+  margin: auto;
+  font-size: 30px;
+  line-height: 1;
+    margin-left: 5px; 
+    
 }
 
 .feature-section .single-feature .content h3 {
