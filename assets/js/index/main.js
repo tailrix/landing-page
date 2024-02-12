@@ -23,11 +23,11 @@
 
     if (window.pageYOffset > sticky) {
       header_navbar.classList.add("sticky");
-      logo.innerHTML = `<h4 class="navbar-brand" style="color:#0d6efd">SubZero</h4> `
+      logo.innerHTML = `<h4 class="navbar-brand" style="color:#0d6efd">Tailrix</h4> `
       //logo.src = "assets/img/index/logo/logo-2.svg";
     } else {
       header_navbar.classList.remove("sticky");
-      logo.innerHTML = `<h4 class="navbar-brand" style="color:white">SubZero</h4> `
+      logo.innerHTML = `<h4 class="navbar-brand" style="color:white">Tailrix</h4> `
       //logo.src = "assets/img/index/logo/logo.svg";
     }
 

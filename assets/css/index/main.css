@@ -928,29 +928,40 @@ p {
     flex-wrap: wrap; } }
 
 .single-logo {
-  padding: 0 30px; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single-logo {
-      padding: 0 15px; } }
-  @media (max-width: 767px) {
-    .single-logo {
-      padding: 0 15px; } }
-  @media (max-width: 767px) {
-    .single-logo {
-      width: 50%; } }
-  @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .single-logo {
-      width: 33.33%; } }
-  .single-logo img {
-    height: 30px;
-    opacity: 1;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
-  .single-logo:hover img {
-    opacity: 1; }
+  padding: 0 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-logo {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .single-logo {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .single-logo {
+    width: 100%; /* Adjusted to maintain size, consider aspect ratio */
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-logo {
+    width: 66.66%; /* Adjusted to double the previous size */
+  }
+}
+.single-logo img {
+  height: 60px; /* Doubled the height */
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single-logo:hover img {
+  opacity: 1;
+}
 
 
 /* ====== feature css ====== */
