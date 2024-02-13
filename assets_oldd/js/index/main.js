@@ -28,7 +28,7 @@
     } else {
       header_navbar.classList.remove("sticky");
       logo.innerHTML = `<h4 class="navbar-brand" style="color:white">Tailrix</h4> `
-      //logo.src = "assets/img/index/logo/logo.svg";
+      //logo.src = "assets/img/index/logo/logo.png";
     }
 
     // show or hide the back-top-top button
