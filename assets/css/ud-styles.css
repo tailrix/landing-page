@@ -90,6 +90,10 @@ h6 {
   margin: 0px;
 }
 
+.feature-section .single-feature {
+  text-align: center; /* This centers the content of .single-feature */
+}
+
 .feature-section .single-feature .icon4 {
   
   font-size: 70px;
@@ -103,16 +107,22 @@ h6 {
   
     margin-left: 5px; 
     color: var(--number-color);
-    
+  
 }
 
  .icon2 {
-  width: 130px;
-  
-  
-  color: var(--number-color);
+  width: 200;
   font-size: 70px;
   
+    /* Creating gradient for text */
+    background: linear-gradient(to top, var(--primary-color), var(--number-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Making the text color transparent to show the gradient */
+  
+    /* Additional styles for cross-browser compatibility */
+    display: inline-block; /* Required for gradients in some cases */
+    -webkit-text-fill-color: transparent; /* For Safari */
 }
 
 h1 {
@@ -651,8 +661,8 @@ p {
 .ud-hero-brands-wrapper img {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  opacity: 0.5;
-  max-width: 250px;
+  opacity: 0.7;
+  max-width: 150px;
 }
 
 .ud-hero-brands-wrapper img:hover {
@@ -702,11 +712,12 @@ p {
 
 .ud-section-title {
   max-width: 620px;
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 .ud-section-title2 {
   max-width: 620px;
   margin-bottom: 20px;
+  
 }
 
 .ud-section-title span {
@@ -828,6 +839,58 @@ p {
 .ud-single-feature .ud-feature-link:hover {
   color: var(--primary-color);
 }
+
+/* ====== feature-extended css ====== */
+.feature-extended-section .feature-extended-wrapper {
+  padding: 70px 0;
+  background: #f3f4fe;
+  margin-bottom: 150px
+  
+}
+
+.feature-extended-section .single-feature-extended {
+  padding: 30px;
+  text-align: center;
+  
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .feature-extended-section .single-feature-extended {
+    padding: 30px 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .feature-extended-section .single-feature-extended {
+    padding: 30px 0px;
+  }
+}
+
+.feature-extended-section .single-feature-extended .icon {
+  font-size: 65px;
+  line-height: 1;
+  margin-bottom: 30px;
+  /* Creating gradient for text */
+  background: linear-gradient(to top, var(--primary-color), var(--number-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Making the text color transparent to show the gradient */
+
+  /* Additional styles for cross-browser compatibility */
+  display: inline-block; /* Required for gradients in some cases */
+  -webkit-text-fill-color: transparent; /* For Safari */
+}
+
+.feature-extended-section .single-feature-extended .content h3 {
+  margin-bottom: 20px;
+}
+
+.feature-extended-section .single-feature-extended .content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 
 /* ===== About CSS ===== */
 .ud-about {
